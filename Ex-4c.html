@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking details</title>
+</head>
+<body>
+<p><b>Your Ticket Details:</b></p>
+<p>Actual cost per ticket is:150 </p>
+<p id="1"></p>
+<div><p id="2">click here for discount:<a onclick="toggle()"href="#">Apply</a></p></div>
+<script>
+let x+prompt("No of tickets?");
+let total=0;
+x=number(x);
+let c=x*150;
+c=String(c)
+document.getElementById("1").innerHTML=Total cost:"+c;
+function toggle(){
+if(x>2&&x<6){
+let i=0;
+let y=5;
+for(i=0;i<x;i+=){
+total+=((150)-(x*(y/100)*150));
+y+=2;
+};
+else{
+alert("Seats are not available");
+};
+}
+</script>
+</body>
+</hml>
