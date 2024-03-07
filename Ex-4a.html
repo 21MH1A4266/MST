@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Details</title>
+</head>
+<body>
+<script>
+let x=prompt("No.of tickets?");
+let total=0;
+x=Number(x);
+document.write("<b>Your Ticket Details</b><br>");
+document.write("Actual cost per ticket is:150 <br>");
+if(x>2 && x<6){
+document.write("Seats are available<br>");
+let i=0;
+let y=5;
+for(i=0;i<x;i++){
+document.write("Ticket for customer"+(i+1)+"gets"+y+"% discount!,cost is:"+((150)-(y/100)*150)+"<br>");
+total=((150)-(x*(y/100)*150));
+y+=2;
+};
+}
+else
+{
+document.write("Seats are not available");
+};
+document.write("for "+x+" tickets You need to pay:"+total+"<br>");
+</script>
+</body>
+</html>
