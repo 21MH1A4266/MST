@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>DOM API for HTML modification</title> 
+</head> 
+<body style="background-color:lightblue;text-align:center"> 
+    <h1 id="hdr1">Here's your ice cream</h1> 
+    <img id="img1" src="ice.jpg" alt="Ice cream is not ready" width="600" height="600"> 
+    <p id="p1" onclick="eat()">Click here to eat</p> 
+    <script> 
+        function eat(){ 
+            let x=document.getElementById("hdr1").innerHTML; 
+        if(x=="Here's your ice cream"){ 
+            x=document.getElementById("hdr1").innerHTML="Hope you Liked it!"; 
+            document.getElementById("img1").src="ice1.jpg"; 
+            x=document.getElementById("p1").innerHTML="Click to re-fill"; 
+        } 
+        else if(x=="Hope you Liked it!"){ 
+            x=document.getElementById("hdr1").innerHTML="Here's re-filled ice cream"; 
+            document.getElementById("img1").src="ice.jpg";
+            x=document.getElementById("p1").innerHTML="Click here to eat"; 
+        } 
+        else{ 
+            x=document.getElementById("hdr1").innerHTML="Hope you Liked it!"; 
+            document.getElementById("img1").src="ice.jpg"; 
+            x=document.getElementById("p1").innerHTML="Click to re-fill"; 
+        } 
+        } 
+    </script> 
+</body> 
